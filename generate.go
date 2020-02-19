@@ -14,9 +14,9 @@ import (
 func main() {
 	fmt.Println("Generating graph CSV files")
 
-	EdgesToCSV(generateUndirectedPathGraph(10).Edges(), "gen/undirectedPath10.csv")
-	EdgesToCSV(generateUndirectedPathGraph(1000).Edges(), "gen/undirectedPath1000.csv")
-	EdgesToCSV(generateUndirectedPathGraph(10000).Edges(), "gen/undirectedPath10000.csv")
+	EdgesToCSV(generateUndirectedPathGraph(10).Edges(), "csv/undirectedPath10.csv")
+	EdgesToCSV(generateUndirectedPathGraph(1000).Edges(), "csv/undirectedPath1000.csv")
+	EdgesToCSV(generateUndirectedPathGraph(10000).Edges(), "csv/undirectedPath10000.csv")
 }
 
 // EdgesToCSV converts Gonum Graph edges into a CSV file.
